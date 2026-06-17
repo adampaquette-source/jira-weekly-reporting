@@ -1,0 +1,63 @@
+Key,Recommended Label,Confidence,Summary,Assignee,Status,Rationale / confirm,URL
+NA-105,Accounting,H,Investigate why some orders are created with incorrect class/department,Unassigned,Ready For Dev,Wrong class/department on orders (GL dimensions),https://professionalcontractorsupply.atlassian.net/browse/NA-105
+NA-118,Accounting,H,Investigate adding bill notes to payment voucher,Kyler Nelson,Not Started,Bill notes on payment voucher (AP),https://professionalcontractorsupply.atlassian.net/browse/NA-118
+NA-122,Accounting,H,Standalone Bill and Payment,Unassigned,Not Started,Standalone bill & payment (AP),https://professionalcontractorsupply.atlassian.net/browse/NA-122
+NA-184,Accounting,H,Journal approval permission for Sara per Kayla,Kyler Nelson,In Review,Journal approval permission (per Kayla),https://professionalcontractorsupply.atlassian.net/browse/NA-184
+NA-245,Accounting,H,Move PayPal account ownership to Ryan/Kayla,Kyler Nelson,Not Started,Move PayPal ownership to Ryan/Kayla (AR),https://professionalcontractorsupply.atlassian.net/browse/NA-245
+NA-247,Accounting,H,Test non-inventory item invoicing on SB,Kyler Nelson,Ready For Dev,Non-inventory item invoicing test,https://professionalcontractorsupply.atlassian.net/browse/NA-247
+NA-266,Accounting,H,Build AI tool to help AR filter Versapay report,Kyler Nelson,Ready For Dev,AI tool for AR Versapay filtering,https://professionalcontractorsupply.atlassian.net/browse/NA-266
+NA-267,Accounting,H,AI Credit App analysis tool for Accounting,Kyler Nelson,Ready For Dev,AI credit-app analysis tool for Accounting,https://professionalcontractorsupply.atlassian.net/browse/NA-267
+NA-269,Accounting,H,Default refund account when refunding cash,Kyler Nelson,Not Started,Default refund account for cash refunds,https://professionalcontractorsupply.atlassian.net/browse/NA-269
+NA-31,Accounting,H,Confirm Avalara + Per Line Tax Calculation Netsuite Setting Behavior,Kyler Nelson,In Development,Avalara / per-line tax calculation,https://professionalcontractorsupply.atlassian.net/browse/NA-31
+NA-7,Accounting,M,Confirm Order Import Fields / Accounting Validation,Cristobal Aguirre,In Development,Order import + accounting validation,https://professionalcontractorsupply.atlassian.net/browse/NA-7
+NA-90,Accounting,M,Review True Cost/GP on CSF10707,Kyler Nelson,In Review,True Cost / GP review,https://professionalcontractorsupply.atlassian.net/browse/NA-90
+NA-99,Accounting,M,Update search to only show orders with COGS $1400 or more,Kyler Nelson,In Development,COGS-threshold search; confirm vs Sales,https://professionalcontractorsupply.atlassian.net/browse/NA-99
+NA-162,Ecommerce,H,Walmart Celigo Auth Integration Update,Cristobal Aguirre,Not Started,Walmart Celigo marketplace integration,https://professionalcontractorsupply.atlassian.net/browse/NA-162
+NA-76,Ecommerce,H,Scope out the process for Shopify,Former user,In Development,Shopify process scoping (NOTE: assigned to a former user — reassign),https://professionalcontractorsupply.atlassian.net/browse/NA-76
+NA-272,Ecommerce,M,eBay imports: set DC region (Columbus vs Las Vegas) by ship-to state on order creation,Cristobal Aguirre,Not Started,eBay import DC-region routing; confirm vs Operations,https://professionalcontractorsupply.atlassian.net/browse/NA-272
+NA-265,Ecommerce,L,ARP reviews,Unassigned,Not Started,ARP (advertised price) reviews; confirm vs Sales,https://professionalcontractorsupply.atlassian.net/browse/NA-265
+NA-127,Operations,H,Add Estes to Columbus Shiphawk,Cristobal Aguirre,Ready For Dev,Add Estes (LTL carrier) to Columbus Shiphawk,https://professionalcontractorsupply.atlassian.net/browse/NA-127
+NA-148,Operations,H,Review LV Warehouse login for print picking ticket function - David  & Kyle,Unassigned,Not Started,Warehouse login for print picking ticket,https://professionalcontractorsupply.atlassian.net/browse/NA-148
+NA-151,Operations,H,Add new account to Shiphawk,Cristobal Aguirre,Not Started,Add account to Shiphawk (shipping),https://professionalcontractorsupply.atlassian.net/browse/NA-151
+NA-152,Operations,H,Update Rules in shiphawk,Unassigned,Not Started,Shiphawk rules,https://professionalcontractorsupply.atlassian.net/browse/NA-152
+NA-196,Operations,H,ALA - Texas Override to Washburn,Cristobal Aguirre,In Review,ALA Texas override to Washburn,https://professionalcontractorsupply.atlassian.net/browse/NA-196
+NA-26,Operations,H,Script for Setting Inventory Location to cover Local Ship Methods & Preempt ALA,Unassigned,Not Started,ALA / inventory-location for ship methods,https://professionalcontractorsupply.atlassian.net/browse/NA-26
+NA-27,Operations,H,Decide on allowed ALA behavior for LTL Ship Methods,Unassigned,Not Started,ALA behavior for LTL ship methods,https://professionalcontractorsupply.atlassian.net/browse/NA-27
+NA-28,Operations,H,Decide on Re-trigger mechanism / desired behavior,Unassigned,Not Started,ALA re-trigger behavior,https://professionalcontractorsupply.atlassian.net/browse/NA-28
+NA-155,Operations,M,Custom Fields on SO to drive Packing Slips,Cristobal Aguirre,Ready For Dev,Custom SO fields to drive packing slips,https://professionalcontractorsupply.atlassian.net/browse/NA-155
+NA-197,Operations,M,Amazon Buy Shipping in Shiphawk,Cristobal Aguirre,In Review,Amazon Buy Shipping in Shiphawk; confirm vs Ecommerce,https://professionalcontractorsupply.atlassian.net/browse/NA-197
+NA-201,Operations,M,Report to show LTL orders with back orders,Kyler Nelson,Ready For Dev,Report: LTL orders with back orders,https://professionalcontractorsupply.atlassian.net/browse/NA-201
+NA-223,Operations,M,Amazon Premium Shipping Netsuite/Shiphawk workflow,Cristobal Aguirre,In Development,Amazon Premium Shipping / Shiphawk workflow; confirm vs Ecommerce,https://professionalcontractorsupply.atlassian.net/browse/NA-223
+NA-24,Operations,M,Assess Missing Paccurate Box Recs in Shiphawk,Cristobal Aguirre,Not Started,Paccurate box recs in Shiphawk (cartonization/shipping),https://professionalcontractorsupply.atlassian.net/browse/NA-24
+NA-25,Operations,M,"Cris: Task picking and replenishment is running slow, and so does sales order picking. ",Cristobal Aguirre,Not Started,Picking/replenishment performance,https://professionalcontractorsupply.atlassian.net/browse/NA-25
+NA-255,Operations,M,"Hey Cris, is there any way to auto populate on the BOL of our internal transfers that ""Appointment required for delivery""",Cristobal Aguirre,Ready For Dev,Auto-populate BOL on internal transfers,https://professionalcontractorsupply.atlassian.net/browse/NA-255
+NA-30,Operations,M,Sandbox - Enable Multiple Shipping Routes,Unassigned,In Development,Enable multiple shipping routes,https://professionalcontractorsupply.atlassian.net/browse/NA-30
+NA-110,Operations,L,Netsuite Store Pick Up Feature,Cristobal Aguirre,Not Started,Store pickup feature; confirm vs Ecommerce,https://professionalcontractorsupply.atlassian.net/browse/NA-110
+NA-65,Operations,L,Review CS Drop Ship Queue for Adam in prep for Simpson drop ships,Kyler Nelson,Ready For Dev,CS drop-ship queue prep (Simpson); confirm vs Sales,https://professionalcontractorsupply.atlassian.net/browse/NA-65
+NA-66,Sales,H,Sales order creation issue with Megan,Kyler Nelson,In Review,Sales order creation issue,https://professionalcontractorsupply.atlassian.net/browse/NA-66
+NA-202,Sales,M,"Line Level version of ""Sales by Location""",Kyler Nelson,Ready For Dev,Line-level 'Sales by Location' report; confirm vs Accounting,https://professionalcontractorsupply.atlassian.net/browse/NA-202
+NA-80,Sales,M,Create new role for sales,Kyler Nelson,Ready For Dev,New NetSuite role for sales users,https://professionalcontractorsupply.atlassian.net/browse/NA-80
+NA-157,Sales,L,Lawson Electric Merge Customer,Cristobal Aguirre,Not Started,Customer merge (Lawson Electric); confirm vs Accounting,https://professionalcontractorsupply.atlassian.net/browse/NA-157
+NA-257,Sales,L,Add Promo Redemptions to Confluence,Kyler Nelson,Ready For Dev,Add promo redemptions to Confluence (doc); confirm,https://professionalcontractorsupply.atlassian.net/browse/NA-257
+NA-263,Sales,L,Promo Redemptions for May 2026,Kyler Nelson,In Development,Promo redemptions May 2026; confirm vs Ecommerce,https://professionalcontractorsupply.atlassian.net/browse/NA-263
+NA-264,Sales,L,DeWalt,Unassigned,Not Started,DeWalt promo (child of NA-263); confirm vs Ecommerce,https://professionalcontractorsupply.atlassian.net/browse/NA-264
+NA-32,Sales,L,Figure out the Please Enter a Shipping Address Pop Up Preventing Save,Unassigned,Not Started,Shipping-address popup blocks order save; confirm vs Operations,https://professionalcontractorsupply.atlassian.net/browse/NA-32
+NA-158,Supply_Chain,H,Saved Searches for Inventory Transfer Opportunities,Unassigned,Not Started,Saved searches for inventory transfer opportunities,https://professionalcontractorsupply.atlassian.net/browse/NA-158
+NA-224,Supply_Chain,H,Revisit Inventory Status in Netsuite Sandbox before ASN rollout,Cristobal Aguirre,Ready For Dev,Inventory status before ASN rollout,https://professionalcontractorsupply.atlassian.net/browse/NA-224
+NA-225,Supply_Chain,H,EDI - default Milwaukee drop ships to not send via EDI,Kyler Nelson,Not Started,EDI drop-ship default (Milwaukee),https://professionalcontractorsupply.atlassian.net/browse/NA-225
+NA-233,Supply_Chain,H,Transfer Order Timing to capture more consolidations,Cristobal Aguirre,Not Started,Transfer-order timing / consolidations,https://professionalcontractorsupply.atlassian.net/browse/NA-233
+NA-120,Supply_Chain,M,Non-Inventory service item for Interlocation SO,Unassigned,Not Started,Non-inventory service item for inter-location SO,https://professionalcontractorsupply.atlassian.net/browse/NA-120
+NA-144,Supply_Chain,M,Create search to catch inventory impacting transactions that are created improperly,Kyler Nelson,Not Started,Search for improper inventory-impacting txns,https://professionalcontractorsupply.atlassian.net/browse/NA-144
+NA-246,Supply_Chain,M,Investigate missing freight on internal PO's,Kyler Nelson,Ready For Dev,Missing freight on internal POs; confirm vs Accounting,https://professionalcontractorsupply.atlassian.net/browse/NA-246
+NA-244,Supply_Chain,L,Stock level notification for pre-built cart kits,Kyler Nelson,In Review,Stock-level notification for cart kits; confirm vs Ecommerce,https://professionalcontractorsupply.atlassian.net/browse/NA-244
+NA-256,Supply_Chain,L,Add EDI tasks to Confluence,Kyler Nelson,Ready For Dev,Add EDI tasks to Confluence (doc); confirm vs Technology,https://professionalcontractorsupply.atlassian.net/browse/NA-256
+NA-107,Technology,H,Resolve Missing Accounts for Kyler's login,Cristobal Aguirre,In Development,Missing accounts for Kyler's login (internal admin),https://professionalcontractorsupply.atlassian.net/browse/NA-107
+NA-159,Technology,H,Swap Out Full Licenses to Limited Licenses,Cristobal Aguirre,Not Started,Full->limited NetSuite license swap (internal admin),https://professionalcontractorsupply.atlassian.net/browse/NA-159
+NA-17,Technology,H,Identify all connected apps and services,Cristobal Aguirre,Not Started,"Connected-apps inventory (sandbox/token refresh, internal)",https://professionalcontractorsupply.atlassian.net/browse/NA-17
+NA-18,Technology,H,Document token and credential refresh procedures,Cristobal Aguirre,Not Started,Token/credential refresh docs (internal),https://professionalcontractorsupply.atlassian.net/browse/NA-18
+NA-19,Technology,H,Establish a refresh schedule and checklist,Cristobal Aguirre,Not Started,Sandbox refresh schedule (internal),https://professionalcontractorsupply.atlassian.net/browse/NA-19
+NA-242,Technology,H,NS Case for search timeouts,Kyler Nelson,In Development,NetSuite case for search timeouts (platform),https://professionalcontractorsupply.atlassian.net/browse/NA-242
+NA-268,Technology,H,Netsuite email PDF files error,Kyler Nelson,In Review,NetSuite email-PDF error (platform),https://professionalcontractorsupply.atlassian.net/browse/NA-268
+NA-74,Technology,H,Need an email address from Domo that will ingest the reports,Kyler Nelson,Not Started,Domo report ingestion email (internal/Domo),https://professionalcontractorsupply.atlassian.net/browse/NA-74
+NA-13,Technology,L,Send report URL to Netsuite Customer Record. Devs will take over from there to extract and parse the report to get to sku level status,Cristobal Aguirre,Not Started,Report URL plumbing to customer record; confirm vs Supply_Chain,https://professionalcontractorsupply.atlassian.net/browse/NA-13
+NA-154,Technology,L,Make mock up for CSV format,Kyler Nelson,Not Started,CSV mock-up (data formatting); confirm,https://professionalcontractorsupply.atlassian.net/browse/NA-154

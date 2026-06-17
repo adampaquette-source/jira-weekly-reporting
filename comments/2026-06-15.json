@@ -1,0 +1,36 @@
+{
+  "as_of": "2026-06-15",
+  "_note": "Plain-English summaries of the latest substantive Jira comment per in-flight card, distilled by the pull-time agent from the raw comment threads (markup/scheduling chatter stripped). The generator renders these deterministically and flags staleness from `date`. 'author' is who wrote the source comment; a bot/automation author is labeled as such, not the assignee.",
+  "notes": {
+    "TTD-94": {
+      "author": "Bong Lee",
+      "date": "2026-06-12",
+      "summary": "Order history and order-edit features are complete; quote-to-sales-order conversion is still in progress. Target dates: feature-complete 6/19, beta testing 6/22–7/02, wider release 7/03."
+    },
+    "TTD-288": {
+      "author": "Jordan Serna",
+      "date": "2026-06-12",
+      "summary": "Automated smoke and landing-page test suites pass with up to 6 simultaneous users. Checkout/submit suite is under development. Still to come: customer-page, product-page, and edge-case tests."
+    },
+    "TTD-155": {
+      "author": "Jeff Liang",
+      "date": "2026-06-12",
+      "summary": "Uploading Clark Construction's pricing now (a few days to finish). Wrapping up the invoicing piece, expected complete next week."
+    },
+    "TTD-181": {
+      "author": "Dev automation (QA)",
+      "date": "2026-06-12",
+      "summary": "Server-side automation passed QA in the sandbox on 6/10. Remaining before production: customer-service browser testing and an RF-SMART compatibility check — no code changes expected."
+    },
+    "TTD-179": {
+      "author": "Shyam Menon",
+      "date": "2026-05-19",
+      "summary": "Fix is complete and ready for sandbox testing; can go to production once approved. Awaiting sign-off from Solomon."
+    },
+    "TTD-279": {
+      "author": "Bong Lee",
+      "date": "2026-05-27",
+      "summary": "Issue appears isolated to one user (Ruben); needs further troubleshooting with him to resolve."
+    }
+  }
+}

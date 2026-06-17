@@ -1,0 +1,38 @@
+{
+  "_note": "LLM-curated executive summaries per department — the top 2-5 callouts by inferred importance, authored at report time from the week's movement + Jira card comments. Rendered as plain bullets (no sub-headings). If a department is missing here, the generator falls back to the one-line auto summary.",
+  "as_of": "2026-06-15",
+  "Sales": [
+    "Order Entry app (Milestone 4) is the headline: order history & order-edit are complete, quote-to-sales-order is in progress — Bong is targeting feature-complete 6/19 and wider release 7/3.",
+    "Shipped this week: Customer Order History (part of the Order Entry app).",
+    "Clark Construction Coupa punchout is advancing (a top-5 GC): pricing is loading now, invoicing wraps next week.",
+    "Two QA items have gone quiet — Ship to Date (27d) and SF Egbert location fix (19d); worth a status nudge.",
+    "New request: migrate inter-location special orders into the Order Entry tool (Phase 2)."
+  ],
+  "Accounting": [
+    "New tax-compliance bug (TTD-298): 'Disable AvaTax' carries over from special-tax quotes and under-collects tax when a ship-to address changes — audit risk, worth prioritizing.",
+    "10 NetSuite-admin items look like Accounting work and are awaiting Jira labels (AP automation, journal-approval permissions, default refund account, AR/Versapay tooling) — target Friday.",
+    "9 Domo finance dashboards are queued: Income Statement, GL detail, Chart of Accounts, Concur, Versapay, Fixed Assets."
+  ],
+  "Supply Chain": [
+    "Shipped this week: Auto-PO purchase-order automation and the EIM stock-reduction logic for Washburn/Columbus.",
+    "Main in-flight initiatives: the EIM multi-select field refactor and PO custom-pricing for EDI.",
+    "4 NetSuite-admin items await labels (inventory-transfer searches, inventory status before ASN rollout, EDI drop-ship defaults).",
+    "9 Domo supply-chain dashboards are queued (Transfer Orders, Aged Inventory, Supplier Rebates, Item-Vendor join)."
+  ],
+  "Ecommerce": [
+    "1 new request: Route X returns-dashboard integration with NetSuite (RMA sync).",
+    "2 admin items look like ecommerce work — Walmart Celigo integration, and Shopify process scoping (NA-76 is still assigned to a departed user and needs reassignment).",
+    "5 Domo ecommerce dashboards are queued: eBay fees, Amazon/eBay tickets, Shopify order status, Shopify draft orders."
+  ],
+  "Operations": [
+    "Shipped this week: Columbus expected-ship-date fix on Shopify orders.",
+    "8 NetSuite-admin items look like Operations work pending labels — mostly ALA (auto-location-assignment) behavior and ShipHawk carrier setup (Estes, new accounts, rules).",
+    "Recurring theme: ALA behavior decisions for LTL and local ship methods — several are unowned and stalled."
+  ],
+  "Domo": [
+    "3 dashboards in active development: B&M order dashboards, supplier-rebate tracking, and eBay fees.",
+    "Large queued backlog (~30 data connections & reports), weighted toward finance and ops.",
+    "Token-usage optimization (TDDE-103) is flagged — relevant to the Domo credit-cost concern before enabling AI agents.",
+    "Domo now rolls up to Craig + Adam; related items also fold into each group's own report."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "updated": "2026-06-16",
+  "_note": "Maps Jira issues -> consuming department(s) for the per-group reports. Resolution order in group_report.py: (1) each issue label via label_to_dept, (2) issue's parent/epic key via epic_to_dept (children inherit; Jira labels do NOT inherit from parent), (3) explicit key_overrides. Results are unioned, so an issue can belong to multiple departments. Labels in ignore_labels are intake/process noise, not departments. Maintain this file by hand; correct it once when the report mis-buckets something and it stops drifting.",
+
+  "departments": ["Sales", "Accounting", "Supply Chain", "Ecommerce", "Operations", "Technology", "Exec", "Domo"],
+
+  "project_to_dept": {
+    "TDDE": ["Domo"]
+  },
+  "_project_note": "Whole-project routing applied by issue key prefix. TDDE (Domo Data Engineering) -> a dedicated 'Domo' report that goes to its owners (Craig + Adam), rather than scattering ~40 mostly finance/HR dashboard tickets across Supply Chain/Ecommerce. Revisit once TDDE items carry consuming-department labels.",
+
+  "label_to_dept": {
+    "Sales": "Sales",
+    "Accounting": "Accounting",
+    "Supply_Chain": "Supply Chain",
+    "Ecommerce": "Ecommerce",
+    "Operations": "Operations",
+    "Technology": "Technology"
+  },
+
+  "ignore_labels": ["form", "form-67", "task_to_pass", "Dev"],
+
+  "epic_to_dept": {
+    "TTD-109": ["Sales"],
+    "TTD-94": ["Sales"],
+    "TTD-216": ["Supply Chain"],
+    "TTD-238": ["Supply Chain"],
+    "NA-189": ["Supply Chain"],
+    "NA-39": ["Supply Chain"],
+    "NA-251": ["Operations"],
+    "NA-234": ["Technology"]
+  },
+
+  "_epic_notes": {
+    "TTD-109/TTD-94": "Order Entry app / Milestone 4 (labeled Sales); sub-tasks TTD-59/90/91/267/268 unlabeled.",
+    "TTD-216": "Auto PO (labeled Supply_Chain); children TTD-222/223 dropship+replenishment automation unlabeled.",
+    "TTD-238": "EIM multiselect refactor (labeled Supply_Chain); child TTD-239 unlabeled.",
+    "NA-189": "PO custom pricing for EDI (unlabeled parent); children NA-190/191/192/193. Supply-chain per projects.md.",
+    "NA-39": "EDI epic (unlabeled); child NA-149 EDI item-list review.",
+    "NA-251": "FedEx Dallas / Shiphawk carrier setup (unlabeled); child NA-254. Shipping = Operations.",
+    "NA-234": "Saved-search email scheduler feeding Domo (unlabeled); children NA-238/239/240. Internal Technology/Domo, not a business dept.",
+    "skipped": "Accounting & Ecommerce have no unlabeled-child epics — labels cover them. NA admin parents (NA-16/20/42/73/...) are IT-internal plumbing, intentionally left unmapped so they don't clutter business reports. NA-263 promo (Sales vs Ecommerce) left unmapped pending a call."
+  },
+
+  "key_overrides": {
+    "TTD-90": ["Sales"],
+    "TTD-91": ["Sales"],
+    "TTD-267": ["Sales"],
+    "TTD-268": ["Sales"],
+    "NA-189": ["Supply Chain"],
+    "NA-39": ["Supply Chain"],
+    "NA-251": ["Operations"],
+    "NA-234": ["Technology"]
+  },
+
+  "_admin_note": "High-confidence recommendations from the 2026-06-16 NA triage. These NetSuite-admin (NA) tickets are NOT yet labeled in Jira; the generator surfaces them in the recommended department's report under a separate 'Admin (pending tagging)' heading, kept out of the main scorecard. They graduate to a normal label_to_dept member once the admin team tags them (target: Fri 2026-06-19). Only High-confidence items are included; Medium/Low stay in the worksheet only.",
+  "admin_recommendations": {
+    "NA-105": "Accounting", "NA-118": "Accounting", "NA-122": "Accounting", "NA-184": "Accounting",
+    "NA-245": "Accounting", "NA-247": "Accounting", "NA-266": "Accounting", "NA-267": "Accounting",
+    "NA-269": "Accounting", "NA-31": "Accounting",
+    "NA-162": "Ecommerce", "NA-76": "Ecommerce",
+    "NA-127": "Operations", "NA-148": "Operations", "NA-151": "Operations", "NA-152": "Operations",
+    "NA-196": "Operations", "NA-26": "Operations", "NA-27": "Operations", "NA-28": "Operations",
+    "NA-66": "Sales",
+    "NA-158": "Supply Chain", "NA-224": "Supply Chain", "NA-225": "Supply Chain", "NA-233": "Supply Chain",
+    "NA-107": "Technology", "NA-159": "Technology", "NA-17": "Technology", "NA-18": "Technology",
+    "NA-19": "Technology", "NA-242": "Technology", "NA-268": "Technology", "NA-74": "Technology"
+  },
+
+  "_domo_note": "First-pass cross-functional routing for TDDE (Domo) tickets. Every TDDE item is in the standalone 'Domo' report (project_to_dept). Items here ALSO fold into the related group's report under a 'Domo' heading. Finance/HR/internal Domo items (e.g. Attendance, P&C BI, token optimization) intentionally stay Domo-only. Refine once TDDE carries consuming-dept labels.",
+  "domo_subdept": {
+    "TDDE-20": ["Sales"], "TDDE-59": ["Sales"], "TDDE-60": ["Sales"], "TDDE-74": ["Sales"],
+    "TDDE-89": ["Sales"], "TDDE-90": ["Sales"], "TDDE-91": ["Sales"],
+    "TDDE-23": ["Supply Chain"], "TDDE-28": ["Supply Chain"], "TDDE-29": ["Supply Chain"],
+    "TDDE-30": ["Supply Chain"], "TDDE-37": ["Supply Chain"], "TDDE-86": ["Supply Chain"],
+    "TDDE-92": ["Supply Chain"], "TDDE-96": ["Supply Chain"], "TDDE-97": ["Supply Chain"],
+    "TDDE-107": ["Supply Chain"],
+    "TDDE-53": ["Ecommerce"], "TDDE-54": ["Ecommerce"], "TDDE-55": ["Ecommerce"],
+    "TDDE-56": ["Ecommerce"], "TDDE-88": ["Ecommerce"],
+    "TDDE-38": ["Accounting"], "TDDE-40": ["Accounting"], "TDDE-43": ["Accounting"],
+    "TDDE-44": ["Accounting"], "TDDE-45": ["Accounting"], "TDDE-46": ["Accounting"],
+    "TDDE-47": ["Accounting"], "TDDE-48": ["Accounting"], "TDDE-101": ["Accounting"],
+    "TDDE-24": ["Operations"]
+  }
+}
