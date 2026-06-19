@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-06-19",
+  "_note": "Plain-English summaries of the latest substantive Jira comment per in-flight card, distilled by the pull-time agent from the raw comment threads (markup/scheduling chatter stripped). The generator renders these deterministically and flags staleness from `date`. 'author' is who wrote the source comment; a bot/automation author is labeled as such, not the assignee.",
+  "notes": {
+    "TTD-94": {
+      "author": "Bong Lee",
+      "date": "2026-06-19",
+      "summary": "Order history/edit and quote-to-sales-order features are now deployed. Working through feedback from early users. Plan is to release to the full sales team in late June / early July."
+    },
+    "TTD-155": {
+      "author": "Jeff Liang",
+      "date": "2026-06-19",
+      "summary": "Pricing upload for Clark Construction will be complete by this weekend. Reaching out to Clark's technical rep for one more technical test pass. Invoicing should be ready to test by next week."
+    },
+    "TTD-181": {
+      "author": "Dev automation (Claude Account)",
+      "date": "2026-06-19",
+      "summary": "Browser QA test plan written for remaining client-script cases (checkbox auto-populating from customer default). User Event automation already passed QA in sandbox 6/10. Still need customer-service browser pass and RF-SMART compatibility check before prod; no code changes expected."
+    },
+    "TTD-242": {
+      "author": "Kyler Nelson",
+      "date": "2026-06-19",
+      "summary": "Inbound EDI shipment script is largely working in sandbox. Four open items: (1) carrier pro number should go into tracking-number field on packages tab, (2) multiple packages on a drop-ship PO should produce separate fulfillments or unique packages per tracking number, (3) split line items across packages not handled correctly yet, (4) request for error notification when flat-file lines fail silently."
+    },
+    "TTD-288": {
+      "author": "Jordan Serna",
+      "date": "2026-06-12",
+      "summary": "Smoke and landing-page test suites pass with up to 6 concurrent workers. Checkout/submit suite under development with basic workflows passing. Remaining: customer-page, product-page, and edge-case tests; also SuiteScript wiring for automated sandbox cleanup after test runs."
+    },
+    "TTD-177": {
+      "author": "Michael Dubay",
+      "date": "2026-06-04",
+      "summary": "Waiting on a category list/export from Chris Mixon before the audit and consolidation work can proceed."
+    },
+    "TTD-130": {
+      "author": "Kyler Nelson",
+      "date": "2026-04-24",
+      "summary": "Script passed sandbox testing and is ready to deploy to production in a disabled state. Customer who originally prompted the request may no longer need it, but the script will be useful for future EDI customers."
+    },
+    "TTD-178": {
+      "author": "Craig Weber",
+      "date": "2026-01-05",
+      "summary": "Scope confirmed: check items that have any Past-365 field > 0 but no item fulfillments or item receipts in the past year, and clear those values. Line-level location data is sufficient (no need to walk parent locations)."
+    }
+  }
+}

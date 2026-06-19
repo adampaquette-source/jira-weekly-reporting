@@ -1,0 +1,38 @@
+{
+  "_note": "LLM-curated executive summaries per department — the top 2-5 callouts by inferred importance, authored at report time from the week's movement + Jira card comments. Rendered as plain bullets (no sub-headings). If a department is missing here, the generator falls back to the one-line auto summary.",
+  "as_of": "2026-06-19",
+  "Sales": [
+    "Order Entry Milestone 4 (TTD-94): order history, edit, and quote-to-sales-order are now deployed and in feedback review with current users. Beta testing runs 6/22–7/02; wider release targeting 7/03.",
+    "Shipped this week: Customer Order History (TTD-267).",
+    "Clark Construction Coupa punchout (TTD-155): pricing upload completes this weekend; one more technical test with Clark's rep, then invoicing wraps next week.",
+    "4 new requests queued: Phase 2 inter-location special orders in Order Entry (TTD-296), Versapay Deposits integration (TTD-297), portal quote-load error (TTD-300), Sales Orders vs Credit Limit visibility (TTD-301) — all unassigned."
+  ],
+  "Accounting": [
+    "AvaTax tax bug (TTD-298) remains unstarted: 'Disable AvaTax' flag carries over from special-tax quotes and under-collects tax when the ship-to address changes — audit risk, worth prioritizing this sprint.",
+    "Tax recalculation script (TTD-256) is in development by Jeff Liang and directly addresses the AvaTax scenario.",
+    "New request: Integrating Versapay Deposits into Order Entry (TTD-297).",
+    "9 NA admin items flagged for Accounting (AP automation, journal-approval permissions, refund account, AR/Versapay tooling) are still awaiting Jira labels — target was last Friday."
+  ],
+  "Supply Chain": [
+    "Shipped this week: Auto-PO purchase-order automation (TTD-216) and EDI Milwaukee drop-ship default (NA-225).",
+    "EDI inbound shipment handling (TTD-242): script is largely working in sandbox; Kyler raised 4 open items today (tracking-number mapping, multi-package drop ships, split lines, silent-failure notifications) — Shyam to address.",
+    "EIM multi-select field refactor (TTD-238/239) is in development with Bong Lee.",
+    "New: Testing for ASN flat file (NA-281, Kyler Nelson) opened this week."
+  ],
+  "Ecommerce": [
+    "eBay Fees dashboard (TDDE-53) is in active development with Kyler Nelson.",
+    "NA-76 ('Scope out Shopify process') is still assigned to a departed user — needs reassignment (carry-over from last week).",
+    "New request: Amazon Multi Location requires inventory updates be done via API (TTD-299) — unassigned."
+  ],
+  "Operations": [
+    "Ship Complete Automation (TTD-181): browser QA test plan written this week for the remaining client-script cases. User Event automation passed sandbox QA 6/10; only a customer-service browser pass and RF-SMART compatibility check remain before production.",
+    "8 NA admin items flagged for Operations (ALA behavior, ShipHawk carrier setup — Estes, new accounts, routing rules) are pending labels and remain unowned.",
+    "Recurring theme: ALA decisions for LTL and local ship methods are stalled without an owner."
+  ],
+  "Domo": [
+    "Shipped this week: EIM Outputs to Domo via Email Connector (TDDE-97) and Inventory Transfers dashboard (TDDE-108).",
+    "Three dashboards in active development: B&M Order Dashboards (TDDE-20), Supplier Rebate Tracking (TDDE-30), and eBay Fees (TDDE-53).",
+    "New request: New Business Sales NetSuite/Domo Enhancement (TTD-303) — unassigned.",
+    "NA-278 (Item receipts with qty 0 in Domo) opened and in review this week — Kyler Nelson investigating."
+  ]
+}
