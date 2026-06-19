@@ -70,14 +70,17 @@ For each department, create a Gmail draft via the connector:
 - `body` (plain-text fallback) = a one-line summary, e.g. `This week for <Dept>: <counts>. (View as HTML for the full report.) — Adam Paquette, interim IT PM`.
 - **Never send.** Drafts only — Adam reviews and sends manually.
 
-### 6. Commit state back
+### 6. Commit state back — MUST land on `main`
+This is what makes the week-over-week diff advance. Each run clones `main` fresh, so this run's snapshot
+must be committed to `main` or next week will keep diffing against the old seed snapshot and never move forward.
 ```
 git add snapshots/ comments/ exec/ reports/ "Department Reports/"
 git commit -m "Weekly run {date}"
-git push
+git push origin HEAD:main          # push directly to main (unrestricted push is enabled for this repo)
 ```
-(Pushing to the default branch requires the routine's repo permission "Allow unrestricted branch pushes".
-If that is off, push to a `claude/weekly-{date}` branch instead and note it in the summary.)
+Verify the push to `main` succeeded. If it is rejected, do NOT silently fall back to a `claude/` branch and
+move on — instead report it loudly in the summary as a BLOCKER, because the running diff will stall until the
+new snapshot reaches `main`.
 
 ### 7. Summary
 Print: snapshot counts (open/created/progressed/completed/stalled from `diff_report.py`'s stdout), the 6 draft IDs
