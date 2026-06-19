@@ -11,15 +11,9 @@ in a GitHub repo the routine clones each run; the routine commits new snapshots/
 - **Jira (Atlassian) and Gmail connectors** connected on claude.ai (Settings → Connectors). These are
   what the routine uses; they're routed through Anthropic so they work in cloud runs.
 
-## Step 1 — Publish this folder to GitHub (private)
-This folder is already a local git repo with an initial commit. Create an **empty private** GitHub repo
-(e.g. `jira-weekly-reporting`) at https://github.com/new, then from this folder:
-```
-git remote add origin https://github.com/<your-username>/jira-weekly-reporting.git
-git branch -M main
-git push -u origin main
-```
-(If you have the GitHub CLI: `gh repo create jira-weekly-reporting --private --source=. --push`.)
+## Step 1 — Publish this folder to GitHub (private) — ✅ DONE 2026-06-17
+Published to **`git@github.com:adampaquette-source/jira-weekly-reporting`** (private). The local repo
+tracks `origin/main`. Future changes: edit here, then `git add -A && git commit && git push`.
 
 ## Step 2 — Create the routine
 Go to **https://claude.ai/code/routines → New routine** (or Desktop app → **Routines → New → Remote**).
