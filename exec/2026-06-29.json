@@ -1,0 +1,42 @@
+{
+  "_note": "LLM-curated executive summaries per department — the top 2-5 callouts by inferred importance, authored at report time from the week's movement + Jira card comments. Rendered as plain bullets (no sub-headings). If a department is missing here, the generator falls back to the one-line auto summary.",
+  "as_of": "2026-06-29",
+  "Sales": [
+    "Order Entry Milestone 4 (TTD-94): releasing to the National Accounts team next week; broader sales-team rollout to follow in subsequent weeks.",
+    "Clark Construction Coupa punchout (TTD-155): technical test with Clark's rep passed — they are ready to go live whenever Shawn schedules the meeting. Invoicing testing begins next week.",
+    "New Order Entry requests opened this week: Versapay Deposits integration (TTD-297, Bong Lee — UAT access obtained, development starting), Phase 2 inter-location special orders (TTD-296, Bong Lee — dev started in sandbox, 2-week prototype target), Quoting SKU Integration (TTD-307, Bong Lee), AI Assisted Order Intake (TTD-304, Bong Lee). Portal quote-load error (TTD-300) and Sales Orders vs Credit Limit (TTD-301) remain unassigned.",
+    "EIM National Account Sales Capture (TTD-73): filter-only changes in progress with Purchasing; test reports generating this week for review."
+  ],
+  "Accounting": [
+    "Rosendin tax mismatches (TTD-305): ~$322K AR impact — Barry King resolved and closed today, noting Rosendin was using an old tax rate. Related cards TTD-298 (disable-flag bug) and TTD-256 (recalculation script) address forward prevention.",
+    "AvaTax disable-flag bug (TTD-298): still unstarted — the 'Disable AvaTax' flag carries over from special-tax quotes and under-collects tax when the ship-to address changes; audit risk. Should be prioritized this sprint.",
+    "Tax recalculation script (TTD-256): in active development by Jeff Liang, directly addressing the AvaTax scenario for B&M orders with changed addresses.",
+    "New bug this week — Credit-Rebuild location (TTD-306): inventory not pulling from the credit-rebuild location on inter-company orders (Barry King, unstarted).",
+    "Shipped: Credit/Re-Bill button (TTD-253) is fully Done — v2 with RA → Item Receipt into holding location → Credit Memo → Suspended Rebill SO flow, plus True GP fix deployed 6/22. Visible to admins and the Accounting role."
+  ],
+  "Supply Chain": [
+    "EDI inbound shipment handling (TTD-242): Kyler confirmed the latest sandbox test looked good — development appears complete and ready for production sign-off.",
+    "ASN flat file testing (NA-281): inbound shipments are passing. Remaining feedback from Vested is around drop-shipment handling and error notifications for failed records.",
+    "EIM multi-select field refactor (TTD-238/239): in active development with Bong Lee.",
+    "Shipped: EDI Milwaukee drop-ship default (NA-225) is Done."
+  ],
+  "Ecommerce": [
+    "eBay Fees dashboard (TDDE-53): in active development by Kyler Nelson.",
+    "AfterSell order sync (TTD-293): root cause confirmed — AfterSell fires the 'orders/edited' Shopify topic, which the current proxy doesn't subscribe to or handle. When AfterSell removes an item post-fulfillment, NetSuite is never notified. Fix is designed; implementation in progress.",
+    "Shopify→NetSuite order sync (TTD-284): Minnesota Retail Delivery Fee ($0.50 flat fee) crash traced and fixed in sandbox; production deploy pending.",
+    "NA-76 ('Scope out Shopify process'): still assigned to a departed user — needs reassignment (carry-over, third week).",
+    "Signifyd investigation (TTD-291): closed Done this week."
+  ],
+  "Operations": [
+    "Ship Complete Automation (TTD-181): browser QA test plan written for remaining client-script cases. User Event automation passed sandbox QA 6/10; only a customer-service browser pass and RF-SMART compatibility check remain before production.",
+    "Custom Print Picking Ticket for Cross-Sub Fulfillments (TTD-286): working version deployed to production. Cross-sub testing with Cris scheduled for next week.",
+    "ALA decisions (NA-27, NA-26): still stalled with no owner — LTL and local ship-method ALA behavior remains unresolved.",
+    "FedEx Dallas Account (NA-251): blocked — unable to validate the new account on the FedEx Billing Portal without invoice documentation; FedEx support ticket open."
+  ],
+  "Domo": [
+    "Three dashboards in active development: eBay Fees (TDDE-53, Kyler Nelson), Supplier Rebate Tracking (TDDE-30, Kassidy Stoffel), and B&M Order Dashboards / cutoff times (TDDE-20, Kyler Nelson in review).",
+    "Item receipts with qty 0 (NA-278): root cause identified — non-integer quantities in NetSuite were being truncated to integers in the Domo table, causing some to appear as zero. Domo table updated to allow non-integer values; further investigation on split-receipt cases ongoing.",
+    "New Business Sales NetSuite/Domo Enhancement (NA-282, Kyler Nelson): opened this week, unstarted.",
+    "Shipped: EIM Outputs to Domo via Email Connector (TDDE-97) is Done."
+  ]
+}

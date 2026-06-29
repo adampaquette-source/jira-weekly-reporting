@@ -1,0 +1,176 @@
+{
+  "as_of": "2026-06-29",
+  "_note": "Plain-English summaries of the latest substantive Jira comment per in-flight card, distilled by the pull-time agent from the raw comment threads (markup/scheduling chatter stripped). The generator renders these deterministically and flags staleness from `date`. 'author' is who wrote the source comment; a bot/automation author is labeled as such, not the assignee.",
+  "notes": {
+    "TTD-47": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-12",
+      "summary": "Automate LTL & shipping fields: Rules 1–4 built and tested in sandbox as a standalone project. Awaiting Adam's review plus two open decisions — which field drives the Amazon ship template, and whether oversized/130 packages need a confirmation step. Amazon-specific logic (Rule 6) and return-to-sender handling are deferred to a later phase."
+    },
+    "TTD-71": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-12",
+      "summary": "Auto Dropship PO for Simpson backorders: auto-create step built and verified in sandbox. Scheduled Map/Reduce finds SOs with backordered Simpson items, flips lines to Drop Ship, creates vendor-grouped POs, and emails them. Eligibility driven by a purchasing-controlled saved search so it scales to other brands without code changes. Not yet in production."
+    },
+    "TTD-73": {
+      "author": "Bong Lee",
+      "date": "2026-06-26",
+      "summary": "EIM National Account Sales Capture: Sales and Purchasing working out details on using customer territory to capture demand. No script changes needed — only saved-search filter adjustments. Currently generating test reports with last week's changes; will share with Purchasing to review output once ready."
+    },
+    "TTD-94": {
+      "author": "Bong Lee",
+      "date": "2026-06-26",
+      "summary": "Order Entry Milestone 4: releasing to the National Accounts team next week. Broader sales-team rollout to follow in subsequent weeks."
+    },
+    "TTD-130": {
+      "author": "Kyler Nelson",
+      "date": "2026-04-24",
+      "summary": "EDI sell-side custom record script: passed sandbox testing and ready to deploy to production in a disabled state. The customer who prompted the request may no longer need it, but the script will be useful for future EDI customers."
+    },
+    "TTD-151": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-12",
+      "summary": "TrackPOD contact info in order notes: on hold pending completion of the ePOD/signature work (TTD-226). Will resume once that ships."
+    },
+    "TTD-155": {
+      "author": "Jeff Liang",
+      "date": "2026-06-26",
+      "summary": "Clark Construction Coupa punchout: technical test with Clark's rep went well — they are ready to go live whenever Shawn schedules the meeting with Clark Construction. Invoicing testing will begin next week."
+    },
+    "TTD-172": {
+      "author": "Michael Dubay",
+      "date": "2026-05-20",
+      "summary": "Credit Card Orders & Credit Limits: Michael has completed his portion and is reaching out to Ryan Bednarz to schedule a review session."
+    },
+    "TTD-173": {
+      "author": "Michael Dubay",
+      "date": "2026-05-21",
+      "summary": "Make Class/Department required in NetSuite: Michael sent Ryan Bednarz a list of classes, departments, active preferred transaction forms, and examples of current Class/Department recording. Offered to discuss further whenever Ryan is ready."
+    },
+    "TTD-177": {
+      "author": "Michael Dubay",
+      "date": "2026-06-04",
+      "summary": "Unify category structure (pcstools.com): still waiting on the category list/export from Chris Mixon before the audit and consolidation work can proceed."
+    },
+    "TTD-178": {
+      "author": "Craig Weber",
+      "date": "2026-01-05",
+      "summary": "Item Past-365 cleanup: scope confirmed — check items with any Past-365 field > 0 but no fulfillments or receipts in the past year, and clear those values. Line-level location data is sufficient; no need to walk parent locations."
+    },
+    "TTD-179": {
+      "author": "Shyam Menon",
+      "date": "2026-05-19",
+      "summary": "Ship to Date: resolved and ready for testing in sandbox. Once approved, will deploy to production."
+    },
+    "TTD-180": {
+      "author": "Kyler Nelson",
+      "date": "2026-06-05",
+      "summary": "Auto Generate Vendor Return for Logo Items: Kyler suggested identifying logo vendors via a field on the vendor record so sales can select the appropriate vendor from a list. Logo items can be flagged via custitem_logo_item. Awaiting discussion with sales team on preferred approach."
+    },
+    "TTD-181": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-19",
+      "summary": "Ship Complete Automation: browser QA test plan written for the remaining client-script cases (checkbox auto-populating from customer default). User Event automation already passed QA in sandbox 6/10. Still need the CS browser pass and RF-SMART compatibility check before production; no code changes expected."
+    },
+    "TTD-226": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-19",
+      "summary": "TrackPOD ePOD/signature: full suite (including ePOD backfill fix) staged into the prod mirror on 6/15, pre-staged and ready to deploy. The fix attaches the ePOD PDF to fulfillments when a duplicate delivery webhook would otherwise drop the signed proof. Awaiting green light; ~25 production fulfillments are missing their ePOD and will be backfilled once live."
+    },
+    "TTD-242": {
+      "author": "Kyler Nelson",
+      "date": "2026-06-25",
+      "summary": "EDI inbound shipment handling: Kyler confirmed everything worked as expected in the latest sandbox test. Development appears complete; next step is production sign-off."
+    },
+    "TTD-246": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-12",
+      "summary": "TrackPOD: Add Taker to email notifications: on hold pending completion of the ePOD/signature work (TTD-226). Will resume once that ships."
+    },
+    "TTD-257": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-12",
+      "summary": "Paccurate Integration ROI Reports: ROI report drafted 6/10. Figures are directional (live rate table reflects base rates only, no surcharges). Four ROI tracking fields still need to be deployed to production to enable ongoing measurement."
+    },
+    "TTD-264": {
+      "author": "Barry King",
+      "date": "2026-06-12",
+      "summary": "Incorrect Tax Rate for Unvalidated Addresses: live in production as of 6/12. Runs a daily background sweep — any SO whose ship-to address couldn't be validated gets flagged, and a digest email goes to salestax@pcstools.com each morning for the tax team to review and set up Customer Special Tax where needed."
+    },
+    "TTD-265": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-12",
+      "summary": "EDI Vendor Rate column: complete in sandbox and verified. User Event stamps the line rate into the EDI Vendor Rate column on save for EDI-flagged vendors; tested across new and edited POs with values matching exactly, non-EDI vendors untouched. Ready for production deploy pending final sign-off (Kyler)."
+    },
+    "TTD-279": {
+      "author": "Bong Lee",
+      "date": "2026-05-27",
+      "summary": "SF Egbert location defaulting to SF Hayward: issue isolated to Ruben's setup. Needs further troubleshooting with him to identify the root cause."
+    },
+    "TTD-284": {
+      "author": "dev automation (Claude Account)",
+      "date": "2026-06-12",
+      "summary": "Shopify→NetSuite Order Sync: traced the Minnesota Retail Delivery Fee ($0.50 flat) crashing order imports with an unbalanced-transaction error. Fix in sandbox and working; production deploy pending. Broader sync improvements continue under this project."
+    },
+    "TTD-286": {
+      "author": "Bong Lee",
+      "date": "2026-06-26",
+      "summary": "Custom Print Picking Ticket Page for Cross-Sub Fulfillments: working version deployed to production. More cross-sub testing scheduled for next week when Cris returns. New page will be tested during cross-sub sessions."
+    },
+    "TTD-287": {
+      "author": "Barry King",
+      "date": "2026-06-24",
+      "summary": "IRF notification subject-line update: built and deployed to SB2. Every IRF notification now leads with a bracketed tag ([Re-stock], [New Item Build], [Change Request]) so purchasing can triage at a glance. Applies to both the submitted-for-review email and the approve/review status emails."
+    },
+    "TTD-288": {
+      "author": "Jordan Serna",
+      "date": "2026-06-26",
+      "summary": "Automated QA testing suite: 202 total test cases — 141 successes, 11 failures, 45 pending a second run. Two tax-related bugs and one UI bug found. Submit suite: 53 cases; Checkout Page suite: 61 cases; Products Page: 37 cases; Customer Page: 20 cases. NetSuite sandbox cleanup script also in progress."
+    },
+    "TTD-293": {
+      "author": "Barry King",
+      "date": "2026-06-16",
+      "summary": "AfterSell Orders (order sync): root cause confirmed. The order sync is create-only; the proxy listens for orders/updated but not orders/edited (which AfterSell fires via Shopify's Order Editing API). When AfterSell removes an item post-fulfillment, NetSuite is never notified. Proposed fix is to subscribe to orders/edited and handle edits/cancellations on already-imported SOs."
+    },
+    "TTD-296": {
+      "author": "Bong Lee",
+      "date": "2026-06-26",
+      "summary": "Phase 2 inter-location special orders in Order Entry: initial development started in sandbox. Target is a working prototype within two weeks; will then review with Sales and Ops to validate."
+    },
+    "TTD-297": {
+      "author": "Bong Lee",
+      "date": "2026-06-26",
+      "summary": "Versapay Deposits integration: got access to the Versapay UAT environment. Ready to begin integrating Versapay credit card payments into the Order Entry tool."
+    },
+    "NA-278": {
+      "author": "Kyler Nelson",
+      "date": "2026-06-19",
+      "summary": "Investigate item receipts with qty 0 in Domo: root cause identified — some lines in NS have non-integer quantities (decimals), which the Domo table was truncating to integers, causing some to appear as zero. Updated the Domo table to allow non-integer values. Also investigating split-receipt cases where IR qty differs from PO."
+    },
+    "NA-281": {
+      "author": "Kyler Nelson",
+      "date": "2026-06-19",
+      "summary": "Testing for ASN flat file: inbound shipments are working correctly. Remaining feedback from Vested is around drop-shipment handling and error notifications for failed records."
+    },
+    "NA-242": {
+      "author": "Kyler Nelson",
+      "date": "2026-06-19",
+      "summary": "NS Case for search timeouts: fix applied to one single saved search per NS support's guidance (their fix is search-specific, not global). Kyler provided NS support a larger list of searches to fix as well."
+    },
+    "NA-244": {
+      "author": "Kyler Nelson",
+      "date": "2026-05-20",
+      "summary": "Stock level notification for pre-built cart kits: feature has been prepared and is ready to enable. Waiting for the go-ahead from stakeholders."
+    },
+    "NA-251": {
+      "author": "Cristobal Aguirre",
+      "date": "2026-06-10",
+      "summary": "FedEx Dallas Account: unable to validate the new account on the FedEx Billing Portal without invoice documentation. Reached out to FedEx support for a workaround. Same validation is also required in ShipHawk."
+    },
+    "NA-197": {
+      "author": "Cristobal Aguirre",
+      "date": "2026-05-04",
+      "summary": "Amazon Buy Shipping in ShipHawk: extended the update window to 30 seconds to pass Paccurate dimensions on proposed shipments, addressing partial-coverage issues on bulk picks caused by a timing problem."
+    }
+  }
+}
